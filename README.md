@@ -34,7 +34,7 @@ Mac的文件系统默认不区分大小写，这不满足Android源码编译系�
     
 2. 下载wrapper脚本；如果需要下载其他系统版本，直接修改下载完毕后的build-nougat.sh文件的 android-4.4.4_r2.0.1改成你需要的分支即可，分支的信息见 [分支列表](https://source.android.com/source/build-numbers.html#source-code-tags-and-builds)
 
-    `curl -O https://raw.githubusercontent.com/kylemanna/docker-aosp/master/tests/build-nougat.sh`
+    `curl -O https://raw.githubusercontent.com/SeniorZhai/docker-aosp/master/tests/build-nougat.sh`
     
 3. 运行脚本，开始自动下载安装过程；Windows系统可以使用 [Bash for Windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) 或者cygwin。
 
