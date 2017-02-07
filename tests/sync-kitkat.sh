@@ -15,7 +15,7 @@ if [ "$1" = "docker" ]; then
     repo init --depth 1 -u "$TEST_URL" -b "$TEST_BRANCH" --repo-url=https://mirrors.tuna.tsinghua.edu.cn/git/git-repo/
 
     # Use default sync '-j' value embedded in manifest file to be polite
-    repo sync
+    repo sync  -f -j4
     retval=$?
 
     echo "repo sync returned: $retval"
