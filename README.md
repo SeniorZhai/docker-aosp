@@ -30,7 +30,7 @@ Mac的文件系统默认不区分大小写，这不满足Android源码编译系�
 
 1. 设置Android源码下载存放的目录；如果是Mac系统，这一步必须设置为一个大小写敏感的目录；不然后面编译的时候会失败。如果不设置这一步，那么源码会下载到 `~/aosp-root` 目录；设置过程如下：
 
-    `export AOSP_VOL=/Volume/Android/`
+    `export AOSP_VOL=/Volumes/AOSP/`
     
 2. 下载wrapper脚本；如果需要下载其他系统版本，直接修改下载完毕后的build-nougat.sh文件的 android-4.4.4_r2.0.1改成你需要的分支即可，分支的信息见 [分支列表](https://source.android.com/source/build-numbers.html#source-code-tags-and-builds)
 
