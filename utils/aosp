@@ -10,7 +10,8 @@ set -e
 # Override from environment
 
 AOSP_IMAGE=${AOSP_IMAGE:-kylemanna/aosp}
-AOSP_ARGS=${AOSP_ARGS:---rm -it}
+# remove ---rm
+AOSP_ARGS=${AOSP_ARGS: -it}
 
 AOSP_VOL=${AOSP_VOL:-/Volumes/AOSP}
 AOSP_VOL=${AOSP_VOL%/} # Trim trailing slash if needed
